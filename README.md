@@ -43,7 +43,10 @@ pip install -r requirements.txt
 
 ### 4. Criar o banco de dados
 
+As migrations não são versionadas no repositório, então é preciso gerá-las antes de criar as tabelas:
+
 ```bash
+python manage.py makemigrations 
 python manage.py migrate
 ```
 
