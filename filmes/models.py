@@ -7,10 +7,6 @@ class Genero(models.Model):
    def __str__(self):
        return self.nome  # representação em string do autor
 
-   class Meta:
-       verbose_name = 'Gênero'
-       verbose_name_plural = 'Gêneros'
-
 # Create your models here.
 class Filme(models.Model):
    titulo = models.CharField(max_length=255)           # título do livro
@@ -22,6 +18,4 @@ class Filme(models.Model):
    def __str__(self):
        return self.titulo  # representação em string do livro
 
-   class Meta:
-       verbose_name = 'Filme'
-       verbose_name_plural = 'Filmes'
+
